@@ -1,3 +1,22 @@
+# Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS fajlovi
 .DS_Store
+
+# Editor fajlovi
+.vscode/
+.idea/
+
+# Env i privremeni fajlovi
 .env
+*.log
+*.zip
+
+# Git LFS ignore (ako koristiš LFS)
+*.psd
+*.mp4
+*.mov
