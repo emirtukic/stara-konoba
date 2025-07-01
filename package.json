@@ -1,0 +1,21 @@
+{
+  "name": "stara-konoba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "start": "node server.js",
+  "dev": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+"devDependencies": {
+  "tailwindcss": "^3.4.0",
+  "postcss": "^8.4.0",
+  "autoprefixer": "^10.4.0"
+},
+  "description": ""
+}

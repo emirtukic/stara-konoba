@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerija – Stara Konoba</title>
+  <link href="/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="w-[80%] mx-auto flex items-center justify-between py-4 px-6">
+      <a href="/" class="flex items-center">
+        <img src="/images/logo.png" alt="Stara Konoba Logo" class="h-12 w-auto">
+      </a>
+      <div class="flex-1"></div>
+      <nav id="desktop-nav" class="hidden md:flex space-x-8 text-sm uppercase font-medium text-gray-800 transition-colors duration-300">
+        <a href="/" class="hover:text-gray-600">Početna</a>
+        <a href="/menu.html" class="text-gray-900">Meni</a>
+        <a href="/galery.html" class="hover:text-gray-600">Galerija</a>
+        <a href="#contact" class="hover:text-gray-600">Kontakt</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="navbar-menu" class="hidden md:hidden bg-white w-full">
+      <div class="flex flex-col items-center space-y-4 py-6">
+        <a href="/" class="block uppercase font-medium text-sm text-gray-800">Početna</a>
+        <a href="/menu.html" class="block uppercase font-medium text-sm text-gray-800 font-semibold">Meni</a>
+        <a href="/galery.html" class="block uppercase font-medium text-sm text-gray-800">Galerija</a>
+        <a href="#contact" class="block uppercase font-medium text-sm text-gray-800">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40 bg-white flex flex-col items-center justify-center space-y-8 text-lg font-medium uppercase text-gray-800">
+    <a href="/" class="hover:text-gray-600">Početna</a>
+    <a href="/menu.html" class="hover:text-gray-600">Meni</a>
+    <a href="/galery.html" class="text-gray-900">Galerija</a>
+    <a href="#contact" class="hover:text-gray-600">Kontakt</a>
+  </div>
+
+  <main class="pt-24 px-6 md:px-20">
+    <section id="gallery" class="py-24 bg-white" data-aos="fade-up">
+      <h2 class="text-5xl font-light mb-10 text-center section-title">Galerija</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <a href="/images/svadba.jpg" data-lightbox="gallery" data-title="Galerija 1">
+          <img src="/images/svadba.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 1">
+        </a>
+        <a href="/images/food3.JPG" data-lightbox="gallery" data-title="Galerija 2">
+          <img src="/images/food3.JPG" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 2">
+        </a>
+        <a href="/images/food7.jpg" data-lightbox="gallery" data-title="Galerija 3">
+          <img src="/images/food7.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 3">
+        </a>
+        <a href="/images/food10.webp" data-lightbox="gallery" data-title="Galerija 4">
+          <img src="/images/food10.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 4">
+        </a>
+        <a href="/images/svadba3.jpg" data-lightbox="gallery" data-title="Galerija 5">
+          <img src="/images/svadba3.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 5">
+        </a>
+        <a href="/images/basta1.webp" data-lightbox="gallery" data-title="Galerija 6">
+          <img src="/images/basta1.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+        </a>
+        <a href="/images/basta.webp" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/basta.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/basta2.webp" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/basta2.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food11.webp" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food11.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food12.webp" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food12.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/unutra.webp" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/unutra.webp" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/event1.jpg" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/event1.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food1.JPG" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food1.JPG" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food2.JPG" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food2.JPG" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food4.JPG" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food4.JPG" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food5.JPG" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food5.JPG" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food6.JPG" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food6.JPG" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food8.jpg" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food8.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/food9.jpg" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/food9.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/svadba2.jpg" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/svadba2.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+          <a href="/images/svadba4.jpg" data-lightbox="gallery" data-title="Galerija 6">
+            <img src="/images/svadba4.jpg" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" alt="Galerija 6">
+          </a>
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-32 px-6 md:px-20 bg-gray-100 text-center" data-aos="fade-up">
+    <h2 class="text-5xl font-light mb-8 section-title">Kontakt</h2>
+    <p class="text-lg mb-4">📍 Branislava Nušića 6, Sarajevo</p>
+    <p class="text-lg mb-4">📞 +387 61 687 276</p>
+    <p class="text-lg mb-6">📧 stara.konoba@yahoo.vpm</p>
+
+    <form action="mailto:stara.konoba@yahoo.vpm" method="post" enctype="text/plain" class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8 space-y-6 mb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-sm font-semibold text-gray-800 mb-1">Ime i prezime</label>
+          <input type="text" id="name" name="Ime" required class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:ring-2 focus:ring-gray-200 transition duration-200">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-semibold text-gray-800 mb-1">Email adresa</label>
+          <input type="email" id="email" name="Email" required class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:ring-2 focus:ring-gray-200 transition duration-200">
+        </div>
+      </div>
+      <div>
+        <label for="subject" class="block text-sm font-semibold text-gray-800 mb-1">Naslov</label>
+        <input type="text" id="subject" name="Naslov" class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:ring-2 focus:ring-gray-200 transition duration-200">
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-semibold text-gray-800 mb-1">Poruka</label>
+        <textarea id="message" name="Poruka" rows="5" required class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:ring-2 focus:ring-gray-200 transition duration-200"></textarea>
+      </div>
+      <button type="submit" class="bg-gray-800 text-white px-8 py-3 rounded-md hover:bg-gray-900 transition duration-200 w-full md:w-auto">Pošalji upit</button>
+    </form>
+
+    <div class="mt-8">
+      <iframe class="w-full h-80 rounded-xl" src="https://www.google.com/maps?q=Branislava%20Nu%C5%A1i%C4%87a%206%20Sarajevo&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-gray-200 py-12 ">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-lg uppercase tracking-widest mb-4">Stara Konoba</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Restoran Stara Konoba — autentični ukusi Sarajeva.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg uppercase tracking-widest mb-4">Informacije</h3>
+        <p class="mb-2 text-sm">Adresa: Branislava Nušića 6, Sarajevo</p>
+        <p class="mb-2 text-sm">Telefon: 061 687 276</p>
+        <p class="mb-2 text-sm">Email: stara.konoba@yahoo.vpm</p>
+      </div>
+      <div>
+        <h3 class="text-lg uppercase tracking-widest mb-4">Radno vrijeme</h3>
+        <p class="mb-2 text-sm">Pon–Sub: 09:00–22:00</p>
+        <p class="mb-2 text-sm">Nedjelja: Ne radi</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+      © 2025 Stara Konoba. Sva prava zadržana.
+    </div>
+  </footer>
+
+  <<script>
+    const btnBs = document.getElementById('btn-bs');
+    const btnEn = document.getElementById('btn-en');
+    const bsMenu = document.getElementById('bs-menu');
+    const enMenu = document.getElementById('en-menu');
+    btnBs.addEventListener('click', () => {
+      bsMenu.classList.remove('hidden');
+      enMenu.classList.add('hidden');
+      btnBs.classList.replace('bg-gray-200','bg-gray-800');
+      btnBs.classList.replace('text-gray-800','text-white');
+      btnEn.classList.replace('bg-gray-800','bg-gray-200');
+      btnEn.classList.replace('text-white','text-gray-800');
+    });
+    btnEn.addEventListener('click', () => {
+      enMenu.classList.remove('hidden');
+      bsMenu.classList.add('hidden');
+      btnEn.classList.replace('bg-gray-200','bg-gray-800');
+      btnEn.classList.replace('text-gray-800','text-white');
+      btnBs.classList.replace('bg-gray-800','bg-gray-200');
+      btnBs.classList.replace('text-white','text-gray-800');
+    });
+  </script>
+  <script>
+    // Hamburger menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('navbar-menu');
+      menu.classList.toggle('hidden');
+    });
+    // Desktop nav link color on scroll
+    window.addEventListener('scroll', function () {
+      if (window.innerWidth >= 768) {
+        const nav = document.getElementById('desktop-nav');
+        if (window.scrollY > 20) {
+          nav.classList.remove('text-white');
+          nav.classList.add('text-gray-800');
+        } else {
+          nav.classList.remove('text-white');
+          nav.classList.add('text-gray-800');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
